@@ -1,12 +1,26 @@
+import fb from "../images/facebook.png"
+import twitter from "../images/twitter.png"
+import instagram from "../images/insta.png"
+import github from "../images/GitHub.png"
+
 export default function Footer(){
     return(
-        <div className="footer-menu">
-        <p>Contact Me!</p>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-github"></i>
-
+        <footer>
+        <div class="d-flex">
+            <div><img src={fb}
+                alt="facebook logo"
+                className="item"/></div>
+            <div><img src={twitter}
+                alt="twitter logo"
+                className="item"/></div>
+            <div ><img src={instagram}
+                alt="instagram logo"
+                className="item"/></div>
+            <div><img src={github}
+                alt="Githubx logo"
+                className="item"/></div>
         </div>
+            
+        </footer>
     )
 }
